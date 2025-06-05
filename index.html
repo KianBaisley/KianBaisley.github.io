@@ -5,25 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Your Name | Software Developer</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="JSAnimations.js"></script>
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
   <header class="hero">
     <div class="container">
-      <h1>Hello, I am <span class="highlight"><u>Kian Baisley</u></span></h1>
+      <h1>Hello, I am <span class="highlight">Kian Baisley</span></h1>
       <p class="subtitle"> Junior Software Developer | Software Development Student | Technology Entusiast</p>
-      <a href="#contact" class="btn">Get in Touch</a>
     </div>
   </header>
 
-  <section id="about" class="section">
+  <section id="about" class="section scroll-fade">
     <div class="container">
       <h2>About Me</h2>
       <p>I enjoy developing Web Applications, Conventional Applications. I enjoy creating many different types of systems using different coding languages. As it allows me to get my creative juices flowing, but also includes some logical thinking. Which keeps me productive and busy for many hours. Coding is very satisfying for me and it is very satisfying to see your application or system work after many hours of coding and debugging.</p>
     </div>
   </section>
 
-  <section id="skills" class="section dark">
+  <section id="skills" class="section dark scroll-fade">
     <div class="container">
       <h2>Skills and Coding Languages</h2>
       <ul class="skills">
@@ -40,7 +46,7 @@
     </div>
   </section>
 
-  <section id="projects" class="section">
+  <section id="projects" class="section scroll-fade">
     <div class="container">
       <h2>Projects</h2>
       <div class="projects">
@@ -57,17 +63,33 @@
     </div>
   </section>
 
-  <section id="contact" class="section dark">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
+<section id="contact" class="section dark scroll-fade">
+  <div class="container">
+    <h2>Contact</h2>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p><a href="mailto:kianbaisley@gmai.com">kianbaisley@gmail.com</a></p>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-phone"></i>
+        <h3>Phone</h3>
+        <p><a href="tel:+27645356653">+27 64 535 6653</a></p>
+      </div>
+      <div class="contact-card">
+        <i class="fab fa-linkedin"></i>
+        <h3>LinkedIn</h3>
+        <p><a href="https://linkedin.com/in/kian-baisley" target="_blank">linkedin.com/in/kian-baisley</a></p>
+      </div>
+      <div class="contact-card">
+        <i class="fab fa-github"></i>
+        <h3>GitHub</h3>
+        <p><a href="https://github.com/kianbaisley" target="_blank">github.com/kianbaisley</a></p>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <footer class="footer">
     <p>&copy; 2025 Kian Baisley. All rights reserved.</p>
